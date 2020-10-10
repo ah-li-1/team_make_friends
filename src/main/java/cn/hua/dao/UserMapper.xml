@@ -34,4 +34,9 @@
       SELECT * from friends.tbl_user
    </select>
 
+    <!--queryByName-->
+    <select id="queryByName" resultType="User">
+        select * from friends.tbl_user where u_username={#u_usernmae}
+    </select>
+
 </mapper>

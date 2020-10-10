@@ -19,4 +19,7 @@ public interface UserService {
 
     //查询全部User,返回list集合
     List<User> queryAllUser();
+
+    //根据用户名进行查询
+    User queryByName(String name);
 }

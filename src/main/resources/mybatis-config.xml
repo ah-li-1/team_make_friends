@@ -8,5 +8,6 @@
     </typeAliases>
     <mappers>
         <mapper resource="cn/hua/dao/BookMapper.xml"/>
+        <mapper resource="cn/hua/dao/UserMapper.xml"/>
     </mappers>
 </configuration>

@@ -10,27 +10,35 @@
 <html>
 <head>
     <title>首页</title>
-    <style type="text/css">
-        a {
-            text-decoration: none;
-            color: black;
-            font-size: 18px;
-        }
-        h3 {
-            width: 180px;
-            height: 38px;
-            margin: 100px auto;
-            text-align: center;
-            line-height: 38px;
-            background: deepskyblue;
-            border-radius: 4px;
-        }
-    </style>
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/static/js/jQuery_v3.4.1.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
 </head>
 <body>
+<!--Header-->
+<div class="page-header">
 
-<h3>
-    <a href="${pageContext.request.contextPath}/book/allBook">点击进入列表页</a>
-</h3>
+</div>
+
+<%--Content--%>
+<div class="container">
+    <div class="row">
+        <div class="span8">
+            <ul class="nav nav-pills">
+                <li class="active"><a href="user/toLogin">登陆</a></li>
+                <li><a href="#">注册</a></li>
+                <li><a href="#">Practice Editor </a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<%--Foot--%>
+<div>
+
+</div>
 </body>
 </html>

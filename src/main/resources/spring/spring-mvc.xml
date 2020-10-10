@@ -13,8 +13,13 @@
     <!-- 配置SpringMVC -->
     <!-- 1.开启SpringMVC注解驱动 -->
     <mvc:annotation-driven />
+    <mvc:resources location="static/css/" mapping="/css/**"/>
+    <mvc:resources location="static/js/" mapping="/js/**"/>
+    <mvc:resources location="static/fonts/" mapping="/fonts/**"/>
+
     <!-- 2.静态资源默认servlet配置-->
     <mvc:default-servlet-handler/>
+<!--    <mvc:resources mapping="/images/**" location="/images/" />-->
 
     <!-- 3.配置jsp 显示ViewResolver视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
